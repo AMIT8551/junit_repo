@@ -15,7 +15,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import com.bikkadit.employeeManagement.services.WelcomeServices;
 
-@WebMvcTest
+@WebMvcTest(WelcomeController.class)
 class WelcomeControllerTest {
 
 	@MockBean

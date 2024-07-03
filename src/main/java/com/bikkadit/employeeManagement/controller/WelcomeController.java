@@ -21,4 +21,8 @@ public class WelcomeController {
 		return new ResponseEntity<String>(msg,HttpStatus.OK);
 		
 	}
+	
+	
+	
+	
 }

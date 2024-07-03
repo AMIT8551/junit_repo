@@ -20,7 +20,7 @@ public class EmployeeController {
 	@Autowired
 	public EmployeeServicesI employeeServicesImp;
 
-
+	
 	@PostMapping(value = "/setEmp", consumes = { "application/json", "application/xml" }, produces = {
 			"application/json", "application/xml" })
 	public ResponseEntity<Employee> setEmp(@RequestBody Employee emp) {
@@ -31,7 +31,7 @@ public class EmployeeController {
 	}
 
 	@GetMapping(value = "/getEmp", produces = { "application/json", "application/xml" })
-	public ResponseEntity<Employee> setEmp(@RequestParam int id) {
+	public ResponseEntity<Employee> setEmp(@RequestParam int id) throws Exception {
 
 		Employee employee = employeeServicesImp.getEmp(id);
 

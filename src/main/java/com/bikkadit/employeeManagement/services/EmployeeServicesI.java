@@ -6,10 +6,12 @@ import com.bikkadit.employeeManagement.Model.Employee;
 
 @Service
 public interface EmployeeServicesI {
+	
+	
 
 	public Employee setEmp(Employee emp);
 	
-	public Employee getEmp(int eid);
+	public Employee getEmp(int eid) throws Exception;
 	
 	public boolean deleteEmployee(int eid); 
 }
